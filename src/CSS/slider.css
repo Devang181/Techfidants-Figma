@@ -1,0 +1,28 @@
+.slider-track {
+  display: flex;
+}
+
+.slide-wrapper {
+  margin-right: 12px;
+  /* Reduce spacing for smaller screens */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.gradient-border {
+  padding: 4px; /* border thickness smaller for mobile */
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #314daa, #1F2937);
+  display: inline-block;
+}

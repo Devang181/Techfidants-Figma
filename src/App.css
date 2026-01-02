@@ -1,0 +1,14 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+  .font{
+    font-family: "Rethink Sans", sans-serif;
+   
+  } 
+
+  .inter-font { font-family: "Inter", sans-serif;}
+  
