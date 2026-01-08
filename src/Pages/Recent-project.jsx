@@ -7,7 +7,7 @@ const RecentProject = () => {
   const [activeTab, setActiveTab] = useState("Web");
 
   return (
-    <div className="max-w-[1440px] mx-auto mt-[70px] font-sans px-4 md:px-8 lg:px-0">
+    <div className="max-w-[1440px] mx-auto mt-[70px] font-sans px-5 md:px-8 lg:px-0">
       {/* HERO + TABS */}
       <div
         className="relative h-[248px]  bg-no-repeat bg-center flex flex-col justify-center gap-6 max-md:gap-4"

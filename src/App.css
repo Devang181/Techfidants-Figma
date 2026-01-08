@@ -13,6 +13,52 @@
   .inter-font { font-family: "Inter", sans-serif;}
   
 
+/* ===== Client Slider Pagination ===== */
+
+.client-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.client-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #3b82f6;
+  opacity: 0.4;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.client-pagination .swiper-pagination-bullet-active {
+  width: 32px;
+  opacity: 1;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
 
 
+
+
+
+/* ===== ICON CUT FIX ===== */
+.service-swiper,
+.service-swiper .swiper-wrapper,
+.service-swiper .swiper-slide {
+  overflow: visible !important;
+}
+
+/* ===== PROGRESS BAR (BUILT-IN) ===== */
+.service-swiper .swiper-pagination-progressbar {
+  width: 100%  !important;  
+  max-width: 1099px;                /* required width */
+  height: 5px  !important;                  /* required height */
+  margin: 40px auto 0;           /* slider ke niche */
+  background-color: rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+/* moving fill */
+.service-swiper .swiper-pagination-progressbar-fill {
+  background-color: #ffffff !important;
+}
 

@@ -8,6 +8,11 @@ import Services from './Pages/Services.Jsx'
 import RecentProject from './Pages/Recent-project'
 import IntegrationsSection from './Pages/IntegrationsSection'
 import ClientSuccess from './Pages/ClientSuccess'
+import ContactUs from './Pages/ContactUs'
+import Footer from './Pages/Footer'
+import "swiper/css";
+import "swiper/css/pagination";
+
 
 const App = () => {
   return (
@@ -18,8 +23,10 @@ const App = () => {
       <About/>
       <Services/>
       <RecentProject/>
-      <IntegrationsSection/>
+      {/* <IntegrationsSection/> */}
       <ClientSuccess/>
+      <ContactUs/>
+      <Footer/>
 
     </div>
     </>

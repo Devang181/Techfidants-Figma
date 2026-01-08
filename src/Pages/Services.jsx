@@ -1,36 +1,35 @@
-import React from 'react'
-import ServiceSlider from '../components/Ui/Service-Slider'
+import React from "react";
+import ServiceSlider from "../components/Ui/Service-Slider.jsx";
 
 const Services = () => {
   return (
-    <div className="max-w-[1440px] mx-auto font mt-[43px] px-4 md:px-8 lg:px-0">
-      
-      {/* HERO IMAGE + TEXT */}
+    <div className="max-w-[1440px] mx-auto mt-[43px] px-5 md:px-8 lg:px-0 overflow-hidden">
+
+      {/* HERO */}
       <div
-        className="relative h-[320px] bg-no-repeat bg-center flex flex-col justify-center items-center gap-4"
+        className="relative h-[320px] flex flex-col justify-center items-center gap-4"
         style={{
           backgroundImage: "url('/section-head.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           backgroundSize: "818px auto",
         }}
       >
-        {/* TEXT OVER IMAGE */}
-        <h2 className="font-bold text-[42px] text-white leading-[50.4px] text-center">
-          Services
-        </h2>
+        <h2 className="text-[42px] font-bold text-white">Services</h2>
 
-        <p className="font-medium text-[18px] text-[#A7ADBE] text-center w-full max-w-[520px]">
+        <p className="text-[18px] text-[#A7ADBE] text-center max-w-[520px]">
           Discover why Arise excels in delivering innovative, <br />
           client-focused web design solutions.
         </p>
       </div>
 
       {/* SLIDER */}
-      <div className="pt-12 md:pt-16">
+      <div className="pt-16">
         <ServiceSlider />
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,37 +1,54 @@
-import React from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
-const IntegrationsSection = () => {
+
+const IntegrationSection = () => {
   return (
-    <section className="relative max-w-[1440px] mx-autooverflow-hidden px-[171px] font  mt-[66px]">
-      {/* Top-left Background Image */}
+    <section className="relative w-full overflow-hidden mt-26 font">
+      
+      {/* 🔵 BACKGROUND IMAGE (TOP LEFT ONLY) */}
       <div
-        className="absolute top- left-0 w-[900px] h-[350px] bg-no-repeat bg-contain pointer-events-none select-none"
-        style={{ backgroundImage: "url('/123.png')" }}
-      ></div>
+        className="absolute top-0 -left-21 w-[700px] h-[500px] bg-no-repeat bg-contain pointer-events-none"
+        style={{
+          backgroundImage: "url('/123.png')",
+        }}
+      />
 
-      {/* Main Content over Image */}
-      <div className="relative z-10 top-[124px] flex flex-col md:flex-row items-center gap-20">
-        {/* Left Text Content */}
-        <div className="w-1/2 text-white text-start">
-          <h2 className="text-[42px] md:text-5xl font-bold  leading-[50.4px] pt-10">
-            Scalable Infrastructure,  Seamless Integration
-          </h2>
-          <p className="text-[#A7ADBE] pt-3 text-[18px] font-medium leading-[27px]">
-            Discover what our clients say about their experiences and success working with us.  
-          </p>
-          <button className=" bg-gradient-to-r from-[#101636] to-[#0C1027] hover:bg-[#1f2e62] text-white text-[18px] font-medium  mt-3 p-4 rounded-[100px] flex items-center gap-4 transition">
-            Explore all Integrations <FaArrowRightLong />
-          </button>
-        </div>
+      {/* 🔵 MAIN WRAPPER */}
+      <div className="relative max-w-[1440px] mx-auto text-start">
+        
+        {/* 🔵 2 COLUMN LAYOUT */}
+        <div className="flex px-[171px] pt-[104px]">
 
-        {/* Right placeholder (for future orbit / animation) */}
-        <div className="w-1/2 relative flex justify-center items-center">
-          {/* Right orbit / image / animation can go here */}
+          {/* ✅ LEFT SIDE (50%) */}
+          <div className="w-1/2 flex flex-col gap-3 text-white ">
+
+            <h2 className="text-[42px] font-bold leading-[50.4px] mt-10">
+             Scalable Infrastructure, Seamless Integration
+            </h2>
+
+            <p className="text-[#A7ADBE] text-[18px] leading-[27px] font-normal">
+              Discover what our clients say about their experiences and
+              success working with us.
+            </p>
+
+            <button
+              className=" flex w-fit items-center gap-[19px] p-4 rounded-full bg-gradient-to-r from-[#101636] to-[#0C1027] text-white text-[18px] font-medium"
+            >
+              Explore all Integrations
+              <span><FaArrowRight /></span>
+            </button>
+          </div>
+
+          {/* ⬜ RIGHT SIDE (50%) — EMPTY FOR NOW */}
+          <div className="w-1/2">
+            {/* future right-side content */}
+          </div>
+
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default IntegrationsSection
+export default IntegrationSection;

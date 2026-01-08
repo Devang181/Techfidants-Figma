@@ -43,7 +43,7 @@ const projects = [
 
 const Cards = () => {
   return (
-    <div className="max-w-[1100px] mx-auto px-2">
+    <div className="max-w-[1100px] mx-auto px-2 max-lg:px-0">
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 max-md:mx-auto">
         {projects.map((project) => (
           <div
