@@ -12,6 +12,7 @@ import ContactUs from './Pages/ContactUs'
 import Footer from './Pages/Footer'
 import "swiper/css";
 import "swiper/css/pagination";
+import Strategy from './Pages/Strategy'
 
 
 const App = () => {
@@ -23,8 +24,9 @@ const App = () => {
       <About/>
       <Services/>
       <RecentProject/>
-      {/* <IntegrationsSection/> */}
+      <IntegrationsSection/>
       <ClientSuccess/>
+      <Strategy/>
       <ContactUs/>
       <Footer/>
 

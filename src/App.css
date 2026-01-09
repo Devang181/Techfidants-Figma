@@ -62,3 +62,64 @@
   background-color: #ffffff !important;
 }
 
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  border-radius: 9999px;
+  
+
+  /* center correction */
+  transform-origin: center;
+}
+
+/* radius = half of parent ring */
+.i-b1 { transform: rotate(0deg)   translateY(-250px); }
+.i-b2 { transform: rotate(72deg)  translateY(-190px); }
+.i-b3 { transform: rotate(150deg) translateY(-176px); }
+.i-b4 { transform: rotate(237deg) translateY(-222px);}
+.i-b5 { transform: rotate(295deg) translateY(-257px); }
+
+.i-i1 { transform: rotate(25deg)   translateY(-153px); }
+.i-i2 { transform: rotate(125deg)   translateY(-100px); }
+.i-i3 { transform: rotate(232deg)   translateY(-140px); }
+.i-i4 { transform: rotate(310deg)   translateY(-190px); }
+
+/* ================= OUTER RING – ROTATE ================= */
+.outer-ring {
+  animation: rotateOuter 20s linear infinite;
+  transform-origin: center;
+}
+
+/* ================= INNER RING – ROTATE ================= */
+.inner-ring {
+  animation: rotateInner 15s linear infinite;
+  transform-origin: center;
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes rotateOuter {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateInner {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.center-div {
+  animation: counterRotate 15s linear infinite;
+}
+
+@keyframes counterRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.item img {
+  transform: rotate(-360deg);
+}
