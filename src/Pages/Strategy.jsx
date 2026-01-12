@@ -34,7 +34,7 @@ const Strategy = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="w-1/2 max-lg:w-full pl-[95px] max-lg:px-10 flex justify-center">
+          <div className="w-1/2 max-lg:w-full pl-[95px] max-lg:px-10 flex justify-center text-start">
             <div className="flex flex-col gap-4 w-full">
               {stepsData.map(({ id, title, desc, icon: Icon }) => (
                 <div key={id} className="rounded-[16px] px-4 py-6 bg-gradient-to-b from-[#00041F00] to-[#00041F] border border-[#1F275F]">
