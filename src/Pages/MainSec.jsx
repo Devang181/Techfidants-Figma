@@ -6,11 +6,16 @@ const MainSec = () => {
 const slides = [
   "/1sec-1slide.jpg",
   "/1sec-2slide.jpg",
+  "/1sec-5slide.png",
   "/1sec-3slide.jpg",
-  "/1sec-3slide.jpg",
+  "/1sec-6slide.png",
+  "/1sec-4slide.jpg",
+
+
+  
 ];
 
-const continuousSlides = [...slides, ...slides, ...slides];
+const continuousSlides = [...slides, ...slides,];
 
   return (
     <div className="">

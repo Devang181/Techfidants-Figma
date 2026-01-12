@@ -18,15 +18,15 @@ import {
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 
 const services = [
-  { id: 1, title: "Web Development", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: HiOutlineComputerDesktop },
-  { id: 2, title: "Mobile App Development", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaMobileAlt },
-  { id: 3, title: "UI/UX", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaPaintBrush },
-  { id: 4, title: "Dev ops", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaCode },
-  { id: 5, title: "SEO & Digital Marketing", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaSearch },
-  { id: 6, title: "Social Media Management & Analytics", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaShareAlt },
-  { id: 7, title: "Healthcare Platforms", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaHeartbeat },
-  { id: 8, title: "CMS / HRMS / Payroll Systems", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaUsers },
-  { id: 9, title: "AI-based Solutions & Automation", desc: "Tailoring solutions to meet your unique business needs and exceed expectations.", icon: FaRobot },
+  { id: 1, title: "Web Development", desc: "Web Development focuses on building fast, modern, and user-friendly websites.", icon: HiOutlineComputerDesktop },
+  { id: 2, title: "Mobile App Development", desc: "Mobile App Development focuses on creating fast, user-friendly apps for Android and iOS.", icon: FaMobileAlt },
+  { id: 3, title: "UI/UX", desc: "UI/UX focuses on creating visually appealing and user-friendly digital experiences.", icon: FaPaintBrush },
+  { id: 4, title: "Dev ops", desc: "Implement DevOps to streamline development, deployment, and system reliability.", icon: FaCode },
+  { id: 5, title: "SEO & Digital Marketing", desc: "Grow your business online with smart SEO strategies and digital marketing.", icon: FaSearch },
+  { id: 6, title: "Social Media Management & Analytics", desc: "Manage, analyze, and grow your social media presence for better engagement.", icon: FaShareAlt },
+  { id: 7, title: "Healthcare Platforms", desc: "Develop secure and efficient healthcare platforms to improve patient care and management.", icon: FaHeartbeat },
+  { id: 8, title: "CMS / HRMS / Payroll Systems", desc: "Build efficient CMS, HRMS, and payroll systems to streamline business operations.", icon: FaUsers },
+  { id: 9, title: "AI-based Solutions & Automation", desc: "Leverage AI and automation to optimize processes, increase efficiency, and drive growth.", icon: FaRobot },
 ];
 
 const ServiceSlider = () => {
