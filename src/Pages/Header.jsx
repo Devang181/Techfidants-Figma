@@ -3,8 +3,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const Header = () => {
-  const [open, setOpen] = useState(false); // Services dropdown
-  const [mobileMenu, setMobileMenu] = useState(false); // Mobile menu
+  const [open, setOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false); 
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-3 lg:gap-5 text-[#A7ADBE] font-medium">
-          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white">
+          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white transition duration-300">
             About Us
           </li>
 
@@ -34,7 +34,7 @@ const Header = () => {
           <li ref={dropdownRef} className="relative py-2 px-3 cursor-pointer">
             <div
               onClick={() => setOpen(prev => !prev)}
-              className="inline-flex items-center gap-1 sm:gap-2 cursor-pointer hover:text-white select-none"
+              className="inline-flex items-center gap-1 sm:gap-2 cursor-pointer  hover:text-white transition duration-300 select-none"
             >
               <span className="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px]">Services</span>
               {open ? <IoIosArrowUp size={16} /> : <IoIosArrowDown size={16} />}
@@ -80,14 +80,14 @@ const Header = () => {
             )}
           </li>
 
-          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white">Tech Stacks</li>
-          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white">Projects</li>
-          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white">Testimonials</li>
-          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer hover:text-white">Strategy</li>
+          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer  hover:text-white transition duration-300">Tech Stacks</li>
+          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer  hover:text-white transition duration-300">Projects</li>
+          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer  hover:text-white transition duration-300">Testimonials</li>
+          <li className="py-2 px-3 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] cursor-pointer  hover:text-white transition duration-300">Strategy</li>
         </ul>
 
         {/* Contact Button */}
-        <button className="hidden md:block bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-2 px-3 sm:py-2 sm:px-4 md:py-2.5 md:px-4 lg:py-3 lg:px-5 rounded-full text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] font-medium hover:opacity-90 transition">
+        <button className="hidden md:block bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-2 px-3 sm:py-2 sm:px-4 md:py-2.5 md:px-4 lg:py-3 lg:px-5 rounded-full text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] font-medium hover:opacity-80 cursor-pointer transition">
           Contact Us
         </button>
 

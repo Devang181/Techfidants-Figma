@@ -17,7 +17,7 @@ const RecentProject = () => {
         }}
       >
         {/* TEXT */}
-        <div className="text-center px-4">
+        <div className="text-center px-4 mt-15">
           <h2 className="font-bold text-[42px] text-white leading-[50.4px] max-md:text-[32px]">
             Explore Our Recent Projects
           </h2>
@@ -28,7 +28,7 @@ const RecentProject = () => {
         </div>
 
         {/* TABS */}
-        <div className="mt-6 max-md:mt-4">
+        <div className="">
   <ul className="flex flex-wrap justify-center gap-2 px-2">
     {tabs.map((item) => (
       <li key={item}>

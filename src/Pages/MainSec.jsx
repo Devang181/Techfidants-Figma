@@ -18,14 +18,23 @@ const continuousSlides = [...slides, ...slides, ...slides];
       className="
                 relative flex flex-col items-center
                 px-4 sm:px-6 lg:px-0
-                overflow-hidden
-                bg-[url('/background.png')]
+                -mt-[115px]
+                max-2xl:-mt-[95px]
+                max-lg:-mt-[45px]
+                max-md:-mt-[45px]
+                max-sm:-mt-[25px]
+                max-md:h-300px
+                overflow-visible
+                bg-[url('/bg.png')]
                 bg-no-repeat
                 bg-center
-                bg-cover
-              ">
+                bg-top 
+                bg-[length:100%_auto]
+                max:lg-bg-contain
+              "
+              >
       {/* 🔹 HERO CONTENT */}
-      <div className="relative z-10 max-w-[892px] mt-[80px] lg:mt-[144px] text-center">
+      <div className="relative z-10 max-w-[892px] mt-[80px] lg:mt-[204px] text-center">
 
         <div className="bg-white/10 py-2 px-4 rounded-full inline-flex text-[#A7ADBE]">
           <p className="text-[14px] font-medium">
@@ -50,7 +59,7 @@ const continuousSlides = [...slides, ...slides, ...slides];
       </div>
 
       {/* 🔹 SLIDER */}
-      <div className="relative z-10 mt-10 w-full overflow-hidden">
+      <div className="relative z-10 mt-10 w-full overflow-hidden px-0">
         <div className="slider-track flex w-max animate-scroll">
           {continuousSlides.map((src, index) => (
             <div key={index} className="mx-3">
