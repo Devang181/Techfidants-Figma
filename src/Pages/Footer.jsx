@@ -3,9 +3,9 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='max-w-[1440px] mx-auto font'>
-      <div className='mt-[89px] px-[33px] max-xl:px-5 max-lg:px-5 max-md:px-5 max-sm:px-4'>
-        <div className='bg-[#0C0D19] rounded-tr-[55px] rounded-tl-[55px] px-[90px] pt-[41px] pb-7.5 max-xl:px-6 max-lg:px-6 max-md:px-6 max-sm:px-6'>
+    <div className='bg-[#0C0D19] mx-auto font'>
+      <div className='max-w-[1440px] mx-auto mt-[89px] px-[33px] max-xl:px-5 max-lg:px-5 max-md:px-5 max-sm:px-4'>
+        <div className=' rounded-tr-[55px] rounded-tl-[55px] px-[90px] pt-[41px] pb-7.5 max-xl:px-6 max-lg:px-6 max-md:px-6 max-sm:px-6'>
 
           {/* TOP SECTION - Flex layout */}
           <div className="flex flex-wrap justify-between text-start gap-y-10 max-md:gap-y-4">

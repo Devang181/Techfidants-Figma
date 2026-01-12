@@ -18,8 +18,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg-[#0A0D1F]/90 font border-b border-[#232D6B] sticky w-full max-w-[1440px] z-50">
-      <div className="flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-20 py-2 md:py-3 text-white">
+    <div className="bg-[#0A0D1F]/90 font border-b border-[#232D6B] sticky w-full  z-50">
+      <div className=" max-w-[1440px] mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-20 py-2 md:py-3 text-white">
 
         {/* Logo */}
         <img src="/Logo.png" alt="Logo" className="h-6 sm:h-7 md:h-8 lg:h-10" />

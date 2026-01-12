@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const IntegrationSection = () => {
   return (
-    <section className="relative w-full font overflow-hidden mt-[66px]">
+    <section className="relative w-full max-w-[1440px] mx-auto font overflow-hidden mt-[66px]">
 
       {/* DECORATIVE BG IMAGE */}
       <div

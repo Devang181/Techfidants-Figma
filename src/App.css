@@ -1,7 +1,5 @@
 #root {
-  max-width: 1440px;
   margin: 0 auto;
-  
   text-align: center;
 }
 
@@ -11,6 +9,20 @@
   } 
 
   .inter-font { font-family: "Inter", sans-serif;}
+
+
+
+
+  .services-bg {
+  background-size: contain;
+}
+
+
+
+
+
+
+
   
 
 /* ===== Client Slider Pagination ===== */

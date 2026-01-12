@@ -11,7 +11,7 @@ const Strategy = () => {
   ];
 
   return (
-    <section className="relative w-full font overflow-hidden mt-[59px]">
+    <section className="relative max-w-[1440px] mx-auto w-full font overflow-hidden mt-[59px]">
       {/* BG IMAGE */}
       <div className="absolute -top-5 -left-[42px] w-[881.62px] h-[320px] bg-no-repeat bg-contain pointer-events-none max-xl:w-[750px] max-lg:w-[650px] max-md:w-[650px] max-sm:w-[420px] max-xl:-left-40 max-lg:left-[41px] max-md:left-0 max-sm:-left-8"
         style={{ backgroundImage: "url('/section-head.png')" }} />

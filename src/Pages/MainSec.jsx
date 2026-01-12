@@ -3,30 +3,27 @@ import "../CSS/slider.css";
 
 const MainSec = () => {
 
-  const slides = [
-    "/1sec-1slide.jpg",
-    "/1sec-2slide.jpg",
-    "/1sec-3slide.jpg",
-    "/1sec-3slide.jpg",
-  ];
+const slides = [
+  "/1sec-1slide.jpg",
+  "/1sec-2slide.jpg",
+  "/1sec-3slide.jpg",
+  "/1sec-3slide.jpg",
+];
 
-  const continuousSlides = [...slides, ...slides];
+const continuousSlides = [...slides, ...slides, ...slides];
 
   return (
-    <div
+    <div className="">
+      <div
       className="
-        relative flex flex-col items-center 
-        px-4 sm:px-6 lg:px-0 
-        overflow-hidden
-        bg-no-repeat bg-top bg-contain
-      "
-      style={{
-        backgroundImage: "url('/background.png')",
-        backgroundSize: "1440px auto",
-        backgroundPosition: " center",
-      }}
-    >
-
+                relative flex flex-col items-center
+                px-4 sm:px-6 lg:px-0
+                overflow-hidden
+                bg-[url('/background.png')]
+                bg-no-repeat
+                bg-center
+                bg-cover
+              ">
       {/* 🔹 HERO CONTENT */}
       <div className="relative z-10 max-w-[892px] mt-[80px] lg:mt-[144px] text-center">
 
@@ -67,6 +64,7 @@ const MainSec = () => {
         </div>
       </div>
 
+    </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Clientslider from "../components/Ui/Client-slider";
 
 const ClientSuccess = () => {
   return (
-    <div className="rmax-w-[1440px] mx-auto font mt-[144px] px-5 xl:px-10 ">
+    <div className="max-w-[1440px] mx-auto font mt-[144px] px-5 xl:px-10 ">
 
       {/* HERO SECTION */}
       <div

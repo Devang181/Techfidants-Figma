@@ -3,7 +3,7 @@ import ServiceSlider from "../components/Ui/Service-Slider.jsx";
 
 const Services = () => {
   return (
-    <div className="max-w-[1440px] mx-auto mt-[43px] px-5 md:px-8 lg:px-0 overflow-hidden">
+    <div className=" mx-auto mt-[43px] px-5 md:px-8 lg:px-0 overflow-hidden">
 
       {/* HERO */}
       <div
@@ -24,7 +24,7 @@ const Services = () => {
       </div>
 
       {/* SLIDER */}
-      <div className="pt-16">
+      <div className="pt-16 text-start">
         <ServiceSlider />
       </div>
 

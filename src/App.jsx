@@ -18,7 +18,7 @@ import Strategy from './Pages/Strategy'
 const App = () => {
   return (
     <>
-    <div className='bg-[#00020F]  min-h-screen max-w-360 mx-auto'>
+    <div className='bg-[#00020F]  mx-auto'>
       <Header/>
       <MainSec/>
       <About/>
