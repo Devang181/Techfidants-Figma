@@ -19,7 +19,7 @@ const Header = ({ refs }) => { // App.js se refs pass karenge
   const scrollToSection = (id) => {
     const sectionRef = refs[id];
     if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+      sectionRef.current.scrollIntoView({ behavior: "smooth",block:"center" });
       setMobileMenu(false); // Close mobile menu
     }
   };
