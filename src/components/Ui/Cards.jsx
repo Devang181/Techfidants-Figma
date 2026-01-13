@@ -42,13 +42,13 @@ const Cards = ({ projects }) => {
               </p>
 
               <div className="flex justify-between items-center mt-6">
-                <div className="flex gap-4">
+                <div className="flex gap-4 ">
                   {project.tech.map((t, index) => (
                     <img
                       key={index}
                       src={t}
                       alt={`tech-${index}`}
-                      className="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                      className="w-6 h-6 sm:w-7 sm:h-7 object-contain hover:scale-115 transition duration-200"
                     />
                   ))}
                 </div>

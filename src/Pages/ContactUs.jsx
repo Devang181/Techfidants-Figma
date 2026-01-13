@@ -8,11 +8,11 @@ const ContactUs = () => {
     <div className='max-w-[1440px] mx-auto font'>
 
       {/* IMAGE CARD */}
-      <div className='px-[130px] mt-40 flex justify-center max-xl:px-5 max-lg:px-5 max-md:px-5 max-sm:px-4 max-sm:mt-20'>
+      <div className='px-[33px] mt-40 flex justify-center max-xl:px-5 max-lg:px-5 max-md:px-5 max-sm:px-4 max-sm:mt-20'>
         <div
           className="
             relative rounded-[24px] bg-no-repeat bg-center bg-cover
-            w-full max-w-[1180px] min-h-[699px]
+            w-full 
             max-md:min-h-auto
           "
           style={{ backgroundImage: "url('/contact.png')" }}

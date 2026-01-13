@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import ServiceSlider from "../components/Ui/Service-Slider.jsx";
 
-const Services = () => {
+const Services = forwardRef((props,ref) => {
   return (
-    <div className=" mx-auto mt-[43px] px-5 md:px-8 lg:px-0 overflow-hidden">
+    <section ref={ref} className=" mx-auto mt-[43px]  overflow-hidden">
 
       {/* HERO */}
       <div
-        className="relative h-[320px] flex flex-col justify-center items-center gap-4"
+        className="relative h-[320px] flex flex-col justify-center items-center gap-4 px-5 md:px-8 lg:px-0"
         style={{
           backgroundImage: "url('/section-head.png')",
           backgroundRepeat: "no-repeat",
@@ -24,12 +24,12 @@ const Services = () => {
       </div>
 
       {/* SLIDER */}
-      <div className="pt-16 text-start">
+      <div className="pt-16 text-start px-2">
         <ServiceSlider />
       </div>
 
-    </div>
+    </section>
   );
-};
+});
 
 export default Services;

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-const IntegrationSection = () => {
+const IntegrationSection = forwardRef((props, ref) => {
   return (
-    <section className="relative w-full max-w-[1440px] mx-auto font overflow-hidden mt-[66px]">
+    <section ref={ref} className="relative w-full max-w-[1440px] mx-auto font overflow-hidden mt-[66px]">
 
       {/* DECORATIVE BG IMAGE */}
       <div
@@ -19,10 +19,6 @@ const IntegrationSection = () => {
           max-lg:left-[41px]
           max-md:left-0
           max-sm:-left-8
-
-
-          
-          
         "
         style={{ backgroundImage: "url('/section-head.png')" }}
       />
@@ -41,9 +37,8 @@ const IntegrationSection = () => {
             max-lg:gap-10
             max-md:gap-0
             max-md:h-180
-            max-md:px-[5px]
-
-          "
+            max-sm:h-187
+            max-md:px-[5px]"
         >
 
           {/* LEFT SIDE */}
@@ -56,10 +51,7 @@ const IntegrationSection = () => {
               max-lg:px-20
               max-lg:justify-center
               max-md:px-5
-              max-sm:px-0
-
-            "
-          >
+              max-sm:px-0">
             <h2 className="text-[42px] font-bold leading-[50.4px] pt-10 px-[3px] max-xl:pt-8 
             max-lg:pt-0 max-md:text-[32px] max-sm:text-[28px] max-md:leading-[40px]  max-sm:leading-[35px]">
               Scalable Infrastructure, Seamless Integration
@@ -90,12 +82,8 @@ const IntegrationSection = () => {
               max-lg:pl-15
               max-lg:flex
               max-lg:item-center
-              max-lg:justify-center
-              
-             
-
-            "
-          >
+              max-lg:justify-center"
+              >
             {/* OUTER RING */}
             <div
               className="
@@ -155,6 +143,6 @@ const IntegrationSection = () => {
       </div>
     </section>
   );
-};
+});
 
 export default IntegrationSection;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react';
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <section className="mt-26 w-full font">
-      <div className="max-w-[1440px] mx-auto px-20 max-xl:px-0  flex flex-col gap-11">
+    <section ref={ref} className="mt-26 w-full font">
+      <div className="max-w-[1440px] mx-auto px-20 max-xl:px-0 flex flex-col gap-11">
 
         {/* Heading */}
         <h2 className="text-white font-bold text-[42px] text-center">
@@ -11,13 +11,13 @@ const About = () => {
         </h2>
 
         {/* GRID */}
-        <div className="grid max-md:grid-cols-1 grid-cols-4  max-lg:grid-cols-2 gap-6 px-[91px] max-xl:px-0 max-lg:px-25 max-md:px-5  text-start">
+        <div className="grid max-md:grid-cols-1 grid-cols-4 max-lg:grid-cols-2 gap-6 px-[91px] max-xl:px-0 max-lg:px-25 max-md:px-5 text-start">
 
           {/* CARD 1 – INTRO (2 columns) */}
-          <div className="md:col-span-2 relative rounded-[24px]  bg-black/30 overflow-hidden border border-[#FFFFFF]/5">
+          <div className="md:col-span-2 relative rounded-[24px] bg-black/30 overflow-hidden border border-[#FFFFFF]/5">
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: "url('/ABOUT-INTRO.png')" }}
             ></div>
 
@@ -25,13 +25,12 @@ const About = () => {
             <div className="absolute inset-0"></div>
 
             {/* Content */}
-            <div className="relative z-10 p-[45px] flex flex-col gap-6">
+            <div className="relative z-10 p-[45px] max-md:p-6 max-sm:px-3 flex flex-col gap-6">
               <span className="bg-[#253872] px-4 py-1 text-[13px] rounded-sm w-fit text-white">
                 INTRO
               </span>
               <p className="text-white pr-5 max-lg:pr-0 text-[32px] max-md:text-[26px] max-sm:text-[22px] font-medium tracking-[-2px] leading-[40px] max-md:tracking-normal">
-                "We’re a passionate team of technologists, designers, and marketers
-                providing scalable  digital solutions."
+                "We’re a passionate team of technologists, designers, and marketers providing scalable digital solutions."
               </p>
             </div>
           </div>
@@ -39,7 +38,7 @@ const About = () => {
           {/* CARD 2 – STATS */}
           <div className="flex flex-col gap-4 h-full">
             {/* Top */}
-            <div className="flex-1 bg-[#0e0f19] backdrop-blur-md rounded-[24px] flex items-center justify-start p-6 border border-[#FFFFFF]/5">
+            <div className="flex-1 bg-[#0e0f19] backdrop-blur-md rounded-[24px] flex items-center justify-start p-6 max-sm:px-3 border border-[#FFFFFF]/5">
               <div className="flex items-center gap-3 text-white">
                 <p className="text-[48px] font-medium tracking-[-4px]">15+</p>
                 <span className="bg-[#253872] uppercase px-4 py-1 text-[12px] rounded-sm">
@@ -49,7 +48,7 @@ const About = () => {
             </div>
 
             {/* Bottom */}
-            <div className="flex-1 bg-[#0e0f19] backdrop-blur-md rounded-[24px] flex items-center justify-start p-6 border border-[#FFFFFF]/5">
+            <div className="flex-1 bg-[#0e0f19] backdrop-blur-md rounded-[24px] flex items-center justify-start p-6 max-sm:px-3 border border-[#FFFFFF]/5">
               <div className="flex items-center gap-3 text-white">
                 <p className="text-[48px] font-medium tracking-[-4px]">360°</p>
                 <span className="bg-[#253872] uppercase px-4 py-1 text-[12px] rounded-sm">
@@ -70,20 +69,18 @@ const About = () => {
             {/* Content */}
             <div className="relative z-10 flex max-md:py-25 justify-center items-center text-white text-start">
               <p className="text-[28px] font-medium">
-                Happy Clients <br/>Globally
-              
-              <span className="text-[16px] font-normal inline-block ">
-                (counter based)
-              </span>
+                Happy Clients <br />Globally
+                <span className="text-[16px] font-normal inline-block">
+                  (counter based)
+                </span>
               </p>
             </div>
-
           </div>
 
         </div>
       </div>
     </section>
-  )
-}
+  );
+});
 
-export default About
+export default About;

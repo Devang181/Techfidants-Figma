@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,7 +15,11 @@ const Clientslider = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 1200,           // time between slides (ms)
+          disableOnInteraction: false, // continues autoplay after manual swipe
+        }}
         pagination={{
           el: ".client-pagination",
           clickable: true,
@@ -29,7 +33,7 @@ const Clientslider = () => {
               className="relative bg-no-repeat bg-center bg-auto w-[980px] h-[416px] mx-auto
                         max-sm:w-[100%] max-sm:h-auto
                         max-lg:w-[100%] max-md:h-auto
-                        px-[130px] max-sm:px-4 max-md:px-4 rounded-[24px]"
+                        px-[130px] max-sm:px-0 max-md:px-0 rounded-[24px]"
               style={{ backgroundImage: "url('/Stories.png')" }}
             >
               <div className="flex flex-col items-center">
@@ -43,8 +47,8 @@ const Clientslider = () => {
                 </div>
 
                 <p className="font-semibold text-[20px] text-[#A7ADBE] text-center pt-6 px-2.5
-                              max-sm:text-[16px] max-sm:pt-4
-                              max-md:text-[18px] max-md:pt-5">
+                              max-sm:text-[14px] max-sm:pt-4
+                              max-md:text-[18px] max-md:pt-5 ">
                   Working with tech fidants was a game-changer for us. They delivered
                   a website that not only looks great but also drives significant
                   traffic and conversions. Highly recommended!
@@ -60,7 +64,7 @@ const Clientslider = () => {
                   <div className="flex items-center gap-3">
                     <img
                       src="/man.png"
-                      alt=""
+                      alt="client"
                       className="w-[52px] h-[52px] object-cover
                                  max-sm:w-[42px] max-sm:h-[42px]
                                  max-md:w-[48px] max-md:h-[48px]"
@@ -86,7 +90,7 @@ const Clientslider = () => {
         ))}
       </Swiper>
 
-      {/* PAGINATION OUTSIDE CARD */}
+      {/* Pagination */}
       <div className="client-pagination mt-10"></div>
     </div>
   );

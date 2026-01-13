@@ -41,8 +41,8 @@ const ServiceSlider = () => {
       {services.map((service) => {
         const Icon = service.icon;
         return (
-          <SwiperSlide key={service.id} className="!w-[407px] max-md:!w-[390px] max-sm:!w-[349px]">
-            <div className="relative bg-[#0C0D19] text-white rounded-xl p-6 pt-9 max-md:p-5 max-md:pt-9 max-sm:p-5 max-sm:pt-9 ">
+          <SwiperSlide key={service.id} className="!w-[407px] max-md:!w-[390px] max-sm:!w-[305px]">
+            <div className="relative bg-[#0C0D19] text-white rounded-xl p-6 pt-9 max-md:p-5 max-md:pt-9 max-sm:p-3 max-sm:pt-9 ">
 
               {/* ICON */}
               <div className="absolute -top-6 left-6 w-12 h-12 flex items-center justify-center rounded-lg bg-[#253872]">

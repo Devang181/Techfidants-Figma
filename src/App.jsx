@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './Pages/Header'
 import './App.css'
@@ -16,18 +16,27 @@ import Strategy from './Pages/Strategy'
 
 
 const App = () => {
+  const refs = {
+    about: useRef(),
+    services: useRef(),
+    techstacks: useRef(),
+    projects: useRef(),
+    testimonials: useRef(),
+    strategy: useRef(),
+    contact: useRef(),
+  }
   return (
     <>
     <div className='bg-[#00020F]  mx-auto'>
-      <Header/>
-      <MainSec/>
-      <About/>
-      <Services/>
-      <RecentProject/>
-      <IntegrationsSection/>
+      <Header refs={refs}/>
+      <MainSec />
+      <About ref={refs.about}/>
+      <Services ref={refs.services}/>
+      <RecentProject ref={refs.projects}/>
+      <IntegrationsSection ref={refs.testimonials}/>
       <ClientSuccess/>
-      <Strategy/>
-      <ContactUs/>
+      <Strategy ref={refs.strategy}/>
+      <ContactUs ref={refs.contact}/>
       <Footer/>
 
     </div>

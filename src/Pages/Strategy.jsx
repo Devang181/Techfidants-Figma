@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { GiTwirlyFlower } from "react-icons/gi";
 import { PiPenNibFill, PiCodeSimpleFill, PiRocketLaunchFill } from "react-icons/pi";
 
-const Strategy = () => {
+const Strategy = forwardRef((props, ref) => {
   const stepsData = [
     { id: 1, title: "Discovery & Consultation", desc: "We start by understanding your goals and challenges. Through a quick audit of your current workflows, we identify where AI can create the biggest impact.", icon: GiTwirlyFlower },
     { id: 2, title: "Design & Prototyping", desc: "We translate insights into concepts and prototypes that balance technical feasibility with elegant UX.", icon: PiPenNibFill },
@@ -11,18 +11,18 @@ const Strategy = () => {
   ];
 
   return (
-    <section className="relative max-w-[1440px] mx-auto w-full font overflow-hidden mt-[59px]">
+    <section ref={ref} className="relative max-w-[1440px] mx-auto w-full font overflow-hidden mt-[59px]">
       {/* BG IMAGE */}
       <div className="absolute -top-5 -left-[42px] w-[881.62px] h-[320px] bg-no-repeat bg-contain pointer-events-none max-xl:w-[750px] max-lg:w-[650px] max-md:w-[650px] max-sm:w-[420px] max-xl:-left-40 max-lg:left-[41px] max-md:left-0 max-sm:-left-8"
         style={{ backgroundImage: "url('/section-head.png')" }} />
 
       <div className="max-w-[1440px] mx-auto">
         {/* FLEX CONTAINER */}
-        <div className="flex max-lg:flex-col px-[171px] pt-[104px] max-xl:px-5 max-lg:gap-10 relative">
+        <div className="flex max-lg:flex-col px-[171px] pt-[104px] max-md:pt-[55px] max-xl:px-5 max-lg:gap-10 relative">
 
           {/* LEFT COLUMN WRAPPER */}
           <div className="w-1/2 max-lg:w-full flex flex-col">
-            <div className="sticky top-[100px] self-start px-7 text-white max-lg:text-center max-lg:px-10">
+            <div className="sticky top-[100px] self-start px-7 max-sm:px-0 text-white max-lg:text-center max-lg:px-10">
               <h2 className="mb-3 text-[42px] font-bold leading-[50px] max-md:text-[32px]">
                 Strategy & Approach
               </h2>
@@ -34,7 +34,7 @@ const Strategy = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="w-1/2 max-lg:w-full pl-[95px] max-lg:px-10 flex justify-center text-start">
+          <div className="w-1/2 max-lg:w-full pl-[95px] max-lg:px-10 max-md:px-0 flex justify-center text-start">
             <div className="flex flex-col gap-4 w-full">
               {stepsData.map(({ id, title, desc, icon: Icon }) => (
                 <div key={id} className="rounded-[16px] px-4 py-6 bg-gradient-to-b from-[#00041F00] to-[#00041F] border border-[#1F275F]">
@@ -56,6 +56,6 @@ const Strategy = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Strategy;
